@@ -1,7 +1,7 @@
 // Define a simple workflow
 workflow {
-    fastq1 = file('s3://london-nextflowbucket/dragen_fastq_example/NIST7035_TAAGGCGA_L001_R1_001_trimmed.fastq.gz')
-    fastq2 = file('s3://london-nextflowbucket/dragen_fastq_example/NIST7035_TAAGGCGA_L001_R2_001_trimmed.fastq.gz')
+    fastq1 = file('s3://dublin-nextflowbucket/dragen_fastq_example/NIST7035_TAAGGCGA_L001_R1_001_trimmed.fastq.gz')
+    fastq2 = file('s3://dublin-nextflowbucket/dragen_fastq_example/NIST7035_TAAGGCGA_L001_R2_001_trimmed.fastq.gz')
     
     // Call the simpleJob process
     simpleDragen(fastq1,fastq2)
