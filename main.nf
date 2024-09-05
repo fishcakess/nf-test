@@ -10,7 +10,7 @@ workflow {
 
 // Define the process
 process simpleDragen {
-    container 'sedlawrence/python_container:aws'
+    label = 'dragen'
     input:
     file fastq1
     file fastq2
